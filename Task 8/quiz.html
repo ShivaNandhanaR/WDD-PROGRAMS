@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Security Quiz</title>
+
+    <script>
+        function checkQuiz() {
+
+            var score = 0;
+
+            if(document.getElementById("q1b").checked) score++;
+            if(document.getElementById("q2a").checked) score++;
+            if(document.getElementById("q3c").checked) score++;
+            if(document.getElementById("q4b").checked) score++;
+            if(document.getElementById("q5a").checked) score++;
+            if(document.getElementById("q6c").checked) score++;
+            if(document.getElementById("q7a").checked) score++;
+            if(document.getElementById("q8b").checked) score++;
+            if(document.getElementById("q9a").checked) score++;
+            if(document.getElementById("q10c").checked) score++;
+
+            window.location = "result.html?score=" + score;
+        }
+    </script>
+
+</head>
+
+<body>
+
+<center>
+<h1>Cyber Security Quiz</h1>
+</center>
+
+<hr>
+
+<p><b>1. Which of the following is a strong password?</b></p>
+
+<input type="radio" name="q1">123456<br>
+<input type="radio" id="q1b" name="q1">A@12bc89<br>
+<input type="radio" name="q1">password<br><br>
+
+
+<p><b>2. What is the full form of OTP?</b></p>
+
+<input type="radio" id="q2a" name="q2">One Time Password<br>
+<input type="radio" name="q2">Online Test Program<br>
+<input type="radio" name="q2">Open Text Protocol<br><br>
+
+
+<p><b>3. Which attack tricks users into revealing passwords?</b></p>
+
+<input type="radio" name="q3">Firewall<br>
+<input type="radio" name="q3">Encryption<br>
+<input type="radio" id="q3c" name="q3">Phishing<br><br>
+
+
+<p><b>4. Antivirus software protects your computer from?</b></p>
+
+<input type="radio" name="q4">Hackers<br>
+<input type="radio" id="q4b" name="q4">Viruses<br>
+<input type="radio" name="q4">Spam<br><br>
+
+
+<p><b>5. Which is more secure?</b></p>
+
+<input type="radio" id="q5a" name="q5">HTTPS<br>
+<input type="radio" name="q5">HTTP<br>
+<input type="radio" name="q5">FTP<br><br>
+
+
+<p><b>6. Which of these is malware?</b></p>
+
+<input type="radio" name="q6">Chrome<br>
+<input type="radio" name="q6">MS Word<br>
+<input type="radio" id="q6c" name="q6">Trojan<br><br>
+
+
+<p><b>7. Firewall is used for?</b></p>
+
+<input type="radio" id="q7a" name="q7">Network Security<br>
+<input type="radio" name="q7">Printing Documents<br>
+<input type="radio" name="q7">Playing Games<br><br>
+
+
+<p><b>8. Which is a safe online practice?</b></p>
+
+<input type="radio" name="q8">Share Passwords<br>
+<input type="radio" id="q8b" name="q8">Avoid Unknown Links<br>
+<input type="radio" name="q8">Disable Antivirus<br><br>
+
+
+<p><b>9. CAPTCHA is mainly used to stop?</b></p>
+
+<input type="radio" id="q9a" name="q9">Bots<br>
+<input type="radio" name="q9">Hackers<br>
+<input type="radio" name="q9">Viruses<br><br>
+
+
+<p><b>10. Cyber Security means?</b></p>
+
+<input type="radio" name="q10">Watching Videos Online<br>
+<input type="radio" name="q10">Playing Games<br>
+<input type="radio" id="q10c" name="q10">Protecting Computers and Data<br><br>
+
+
+<center>
+<input type="button" value="Submit Quiz" onclick="checkQuiz()">
+</center>
+
+</body>
+</html>
