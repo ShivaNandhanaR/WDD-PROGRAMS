@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+
+    <script>
+        function showScore() {
+            var params = new URLSearchParams(window.location.search);
+            var score = params.get("score");
+
+            document.getElementById("score").innerHTML = score + " / 10";
+        }
+    </script>
+
+</head>
+
+<body onload="showScore()" align="center">
+
+    <h1>Quiz Result</h1>
+
+    <hr>
+
+    <h2>Your Score</h2>
+
+    <h1 id="score"></h1>
+
+    <br>
+
+    <a href="quiz.html">Back to Quiz</a>
+
+</body>
+</html>
